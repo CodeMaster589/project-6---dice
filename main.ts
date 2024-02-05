@@ -1,0 +1,12 @@
+input.onGesture(Gesture.Shake, function () {
+    music.play(music.stringPlayable("G - - - - - - - ", 120), music.PlaybackMode.InBackground)
+    basic.showNumber(3)
+    music.play(music.stringPlayable("G - - - - - - - ", 120), music.PlaybackMode.InBackground)
+    basic.showNumber(2)
+    music.play(music.stringPlayable("G - - - - - - - ", 120), music.PlaybackMode.InBackground)
+    basic.showNumber(1)
+    music.play(music.stringPlayable("C5 - - - - - - - ", 40), music.PlaybackMode.InBackground)
+    basic.showString("Roll!")
+    basic.showNumber(randint(1, 6))
+})
+music.setBuiltInSpeakerEnabled(true)
